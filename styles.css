@@ -434,6 +434,40 @@ section {
     color: white;
 }
 
+/* Roadmap options styling - make the option buttons look like list cards */
+.roadmap-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option-btn {
+    display: block;
+    text-align: left;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(15,23,42,0.03);
+    transition: var(--transition);
+}
+
+.option-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+}
+
+.option-btn:active {
+    transform: translateY(-2px);
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--bg-section);
@@ -869,4 +903,3 @@ section {
         cursor: pointer;
     }
 }
-
